@@ -103,7 +103,7 @@ Les fichiers `_headers` et `.htaccess` ne sont pas appliqués par GitHub Pages ;
 - [ ] **Confirmer les prix et la carte** : la carte a été reprise du menu fourni. Vérifier les prix, les descriptions et les plats du moment.
 - [ ] **Vérifier les allergènes** avec la cuisine et adapter la page `menu.html`.
 - [ ] **Vérifier les liens sociaux** : Instagram, Facebook, TripAdvisor, Gault&Millau.
-- [ ] **Tester le formulaire de réservation** sur mobile et desktop (il ouvre la messagerie du visiteur avec un e-mail prérempli).
+- [ ] **Tester le lien téléphonique** et la réception des appels.
 - [ ] **Vérifier la réception des e-mails** sur `pizzeria-cafedelagare.buxy@sfr.fr` (ou remplacer par une adresse dédiée).
 - [ ] **Google Search Console** : vérifier le domaine, envoyer `sitemap.xml`.
 - [ ] **Google Business Profile** : mettre à jour le lien du site, les horaires, les photos et le lien de réservation.
@@ -157,14 +157,14 @@ Les sources actuelles proviennent des photos du site existant. Pour remplacer un
 - **Aucun cookie, aucun tracker** : pas de Google Analytics, pas de pixel, pas de Google Fonts. Le site est donc dispensé de bandeau de consentement. Si vous ajoutez un outil de mesure d'audience, préférez une solution sans cookie (Plausible, Matomo en mode sans cookie) et mettez à jour la politique de confidentialité.
 - **Polices auto-hébergées** : Playfair Display (titres) + Inter (texte), en WOFF2, avec `font-display: swap`.
 - **Images** : WebP prioritaire, JPG en secours, `srcset` et `sizes`, largeur/hauteur pour éviter les décalages de mise en page.
-- **JavaScript** : un seul fichier, sans dépendance. Le site reste lisible sans JS (le statut affiche un texte par défaut, les photos restent visibles, le formulaire utilise `mailto:`).
-- **Cache** : les fichiers CSS/JS sont appelés avec `?v=20261110`. Si vous modifiez `styles.css`, `head.js` ou `main.js`, changez ce numéro dans les pages HTML pour forcer le rechargement.
+- **JavaScript** : un seul fichier, sans dépendance. Le site reste lisible sans JS (le statut affiche un texte par défaut, les photos restent visibles, la réservation se fait par téléphone).
+- **Cache** : les fichiers CSS/JS sont appelés avec `?v=20261110b`. Si vous modifiez `styles.css`, `head.js` ou `main.js`, changez ce numéro dans les pages HTML pour forcer le rechargement.
 - **Sécurité** : CSP stricte, HSTS, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy` via `_headers` / `.htaccess`. Si vous intégrez une carte Google ou un widget externe, adaptez la CSP.
 - **Accessibilité** : `dialog` natif pour le menu mobile et la galerie, focus visible, `aria-label`, contrastes vérifiés, respect de `prefers-reduced-motion`.
 
 ## 10. Limites connues
 
-- **Réservation** : le formulaire n'envoie pas de données à un serveur ; il prépare un e-mail dans le logiciel de messagerie du visiteur. Pour une vraie réservation en ligne, brancher un service (Formspree, Netlify Forms, TheFork, Google Reserve…) et adapter le formulaire.
+- **Réservation** : elle se fait par téléphone. Pour une vraie réservation en ligne, brancher un service (TheFork, Google Reserve, Formspree…) et ajouter un formulaire dédié.
 - **Commande à emporter** : pas de paiement en ligne. Le site renvoie vers le téléphone. Un click & collect pourra être ajouté plus tard.
 - **Avis** : les notes affichées sont des repères publics (TripAdvisor, Google, Gault&Millau) avec liens. Elles ne sont pas mises à jour automatiquement.
 - **Photos** : certaines proviennent du site existant et ont une résolution limitée (hero 1200 px, logo 42 px). Une nouvelle séance photo améliorerait encore le rendu.

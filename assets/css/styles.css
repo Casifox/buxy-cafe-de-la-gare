@@ -1592,6 +1592,46 @@ ol {
   line-height: 1.6;
 }
 
+.reservation-card {
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: var(--radius);
+  background: var(--navy);
+  color: var(--cream);
+  box-shadow: var(--shadow);
+}
+
+.reservation-card__title {
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.2;
+}
+
+.reservation-card__list {
+  display: grid;
+  gap: 10px;
+  padding: 20px 0;
+  margin-bottom: 22px;
+  border-top: 1px solid var(--line-light);
+  border-bottom: 1px solid var(--line-light);
+}
+
+.reservation-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: rgba(248, 242, 233, 0.78);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.reservation-card__list .icon {
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  color: var(--terracotta-soft);
+}
+
 .reservation-form {
   padding: clamp(24px, 3.4vw, 36px);
   border: 1px solid var(--line);

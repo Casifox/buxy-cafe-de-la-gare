@@ -2,7 +2,7 @@
 <html lang="fr" class="no-js">
 <head>
   <meta charset="utf-8">
-  <script src="assets/js/head.js?v=20261110"></script>
+  <script src="assets/js/head.js?v=20261110b"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Pizzeria Café de la Gare — Pizzas napolitaines à Buxy (71)</title>
   <meta name="description" content="Pizzeria et café à Buxy : pizzas napolitaines, salades, desserts, café et bar. Sur place, en terrasse ou à emporter. Réservez au 03 58 93 36 13.">
@@ -19,7 +19,7 @@
   <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/img/hero-1200.webp" as="image" type="image/webp" imagesrcset="assets/img/hero-800.webp 800w, assets/img/hero-1200.webp 1200w" imagesizes="100vw" fetchpriority="high">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20261110">
+  <link rel="stylesheet" href="assets/css/styles.css?v=20261110b">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pizzeria Café de la Gare">
@@ -126,7 +126,7 @@
           {
             "@type": "Question",
             "name": "Faut-il réserver ?",
-            "acceptedAnswer": { "@type": "Answer", "text": "C'est recommandé, surtout le week-end. Appelez-nous au 03 58 93 36 13 ou envoyez une demande via le formulaire de réservation." }
+            "acceptedAnswer": { "@type": "Answer", "text": "C'est recommandé, surtout le week-end. Appelez-nous au 03 58 93 36 13." }
           },
           {
             "@type": "Question",
@@ -587,7 +587,7 @@
         <div class="reservation__intro reveal">
           <p class="eyebrow">Réservation</p>
           <h2>Une table, une date,<br>une envie ?</h2>
-          <p class="lead">Réservez par téléphone ou envoyez-nous une demande. Nous confirmons toujours par téléphone.</p>
+          <p class="lead">Réservez par téléphone. Nous confirmons votre table directement avec vous.</p>
           <a class="reservation__phone" href="tel:+33358933613">
             <span>Appeler le restaurant</span>
             <strong>03 58 93 36 13</strong>
@@ -595,45 +595,19 @@
           <p class="reservation__note">Pour les groupes de plus de 8 personnes et les événements privés, appelez-nous directement.</p>
         </div>
 
-        <form class="reservation-form reveal" data-reservation-form action="mailto:pizzeria-cafedelagare.buxy@sfr.fr" method="post" enctype="text/plain" aria-label="Demande de réservation">
-          <div class="form-grid">
-            <label>Nom complet
-              <input type="text" name="name" autocomplete="name" required placeholder="Votre nom">
-            </label>
-            <label>Téléphone
-              <input type="tel" name="phone" autocomplete="tel" required placeholder="06 00 00 00 00">
-            </label>
-            <label>E-mail
-              <input type="email" name="email" autocomplete="email" placeholder="vous@exemple.fr">
-            </label>
-            <label>Nombre de personnes
-              <select name="guests" required>
-                <option value="">Choisir</option>
-                <option>1</option><option>2</option><option>3</option><option>4</option>
-                <option>5</option><option>6</option><option>7</option><option>8</option>
-                <option value="9+">9 et plus</option>
-              </select>
-            </label>
-            <label>Date
-              <input type="date" name="date" required>
-            </label>
-            <label>Heure
-              <select name="time" required>
-                <option value="">Choisir</option>
-                <option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option>
-                <option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option>
-                <option>20:30</option><option>21:00</option><option>21:30</option>
-              </select>
-            </label>
-          </div>
-          <label class="form-full">Message
-            <textarea name="message" rows="3" placeholder="Une occasion, une allergie, une demande particulière…"></textarea>
-          </label>
-          <button class="btn btn--primary btn--full" type="submit">Envoyer ma demande <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <p class="form-note">L’envoi ouvre votre messagerie avec les informations de réservation. Aucune donnée n’est stockée sur le site.</p>
-          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          <noscript><p class="form-note">Pour réserver, appelez-nous au <a href="tel:+33358933613">03 58 93 36 13</a>.</p></noscript>
-        </form>
+        <div class="reservation-card reveal">
+          <p class="eyebrow eyebrow--light">Bon à savoir</p>
+          <p class="reservation-card__title">La réservation se fait par téléphone.</p>
+          <ul class="reservation-card__list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Du mardi au dimanche</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Groupes, anniversaires et événements privés</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Commandes à emporter</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="tel:+33358933613">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            Appeler le 03 58 93 36 13
+          </a>
+        </div>
       </div>
     </section>
 
@@ -661,7 +635,7 @@
           </details>
           <details>
             <summary>Faut-il réserver ?</summary>
-            <p>C’est recommandé, surtout le week-end. Appelez-nous au <a href="tel:+33358933613">03 58 93 36 13</a> ou envoyez une demande via le formulaire de réservation.</p>
+            <p>C’est recommandé, surtout le week-end. Appelez-nous au <a href="tel:+33358933613">03 58 93 36 13</a>.</p>
           </details>
           <details>
             <summary>Acceptez-vous les groupes et les événements privés ?</summary>
@@ -775,6 +749,6 @@
     </div>
   </dialog>
 
-  <script src="assets/js/main.js?v=20261110" defer></script>
+  <script src="assets/js/main.js?v=20261110b" defer></script>
 </body>
 </html>
