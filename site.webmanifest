@@ -1,0 +1,25 @@
+{
+  "name": "Pizzeria Café de la Gare",
+  "short_name": "Café de la Gare",
+  "description": "Pizzas napolitaines, café et bar à Buxy. Sur place, en terrasse ou à emporter.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F8F2E9",
+  "theme_color": "#1E2430",
+  "icons": [
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

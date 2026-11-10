@@ -1,0 +1,16 @@
+# Systèmes d'exploitation
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Journaux
+*.log
+
+# Dépendances et environnements locaux
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Divers
+*.zip
