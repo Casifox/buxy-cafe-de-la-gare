@@ -4,9 +4,9 @@
 
 ## Site
 
-- Site officiel : https://pizzeria-cafedelagare-buxy.fr/
-- Carte : https://pizzeria-cafedelagare-buxy.fr/menu.html
-- Sitemap : https://pizzeria-cafedelagare-buxy.fr/sitemap.xml
+- Site officiel : https://casifox.github.io/buxy-cafe-de-la-gare/
+- Carte : https://casifox.github.io/buxy-cafe-de-la-gare/menu.html
+- Sitemap : https://casifox.github.io/buxy-cafe-de-la-gare/sitemap.xml
 
 ## Adresse
 
@@ -34,7 +34,7 @@
 - 27 pizzas de tradition napolitaine : 15 base tomate, 12 base crème.
 - Salades, desserts à emporter, café, thés, bières artisanales, vins et cocktails.
 - Prix nets, service compris.
-- Carte complète et allergènes : https://pizzeria-cafedelagare-buxy.fr/menu.html
+- Carte complète et allergènes : https://casifox.github.io/buxy-cafe-de-la-gare/menu.html
 
 ## Réservation et commande
 

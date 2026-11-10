@@ -72,6 +72,12 @@ Pour tester les trois tailles d'écran : <http://localhost:8090/tools/preview.ht
 2. Le fichier `_headers` applique automatiquement les en-têtes de sécurité et de cache.
 3. Ajouter le nom de domaine personnalisé dans **Domain settings**.
 
+### GitHub Pages (déjà activé)
+
+Le site est publié sur GitHub Pages : <https://casifox.github.io/buxy-cafe-de-la-gare/>.
+
+Les fichiers `_headers` et `.htaccess` ne sont pas appliqués par GitHub Pages ; ils servent pour Netlify, Vercel ou OVH. Pour un domaine personnalisé, ajouter un fichier `CNAME` et configurer le domaine dans **Settings → Pages**.
+
 ### Vercel
 
 1. Importer le dossier comme projet statique.
@@ -88,7 +94,7 @@ Pour tester les trois tailles d'écran : <http://localhost:8090/tools/preview.ht
 
 ## 5. À faire avant la mise en ligne (checklist)
 
-- [ ] **Remplacer l'URL de référence** `https://pizzeria-cafedelagare-buxy.fr` par le domaine définitif dans :
+- [ ] **Remplacer l'URL de référence** `https://casifox.github.io/buxy-cafe-de-la-gare` par le domaine définitif dans :
   - `index.html`, `menu.html`, `mentions-legales.html`, `confidentialite.html` (canonical, Open Graph, JSON-LD) ;
   - `sitemap.xml`, `robots.txt`, `llms.txt`.
 - [ ] **Compléter l'hébergeur** dans `mentions-legales.html` et `confidentialite.html` (nom, adresse, téléphone — obligation LCEN).

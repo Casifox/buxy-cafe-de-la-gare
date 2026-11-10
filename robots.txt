@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /tools/
 
-Sitemap: https://pizzeria-cafedelagare-buxy.fr/sitemap.xml
+Sitemap: https://casifox.github.io/buxy-cafe-de-la-gare/sitemap.xml
