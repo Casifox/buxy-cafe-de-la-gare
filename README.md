@@ -54,7 +54,7 @@ Buxy de la gare/
 Le site est statique. Pour un rendu fidèle (chemins versionnés, `dialog`, prévisualisation), lancez un petit serveur local :
 
 ```bash
-cd "C:\Users\Noah\Documents\Site itnerenet\Buxy de la gare"
+cd buxy-cafe-de-la-gare
 python -m http.server 8090
 ```
 
